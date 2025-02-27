@@ -1,0 +1,14 @@
+@use 'variables';
+
+.footer {
+    background-image: linear-gradient(variables.$blue1, variables.$blue2);
+    text-align: center;
+    height: 300px;
+
+    &__text {
+        color: variables.$textColor;
+        font-size: 28px;
+        position: relative;
+        top: 100px;
+    }
+}

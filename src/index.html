@@ -4,16 +4,112 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Bernardo Birthday</title>
-        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
         
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="stylesheet" href="styles/main.scss">
     </head>
     <body>
-        <h1>Ola Gente</h1>
-        <img src="images/BernardoSelfie.jpg" alt="">
+        <header class="hero">
+            <div class="container">
+                <img class="hero__logo" src="./images/Logo Bernardo1 ano.png" alt="Bernardo1">
+                <p class="hero__text">
+                    Este Ano de 2025 <br> estarei Completando meu 1° Aninho
+                </p>
+                <p class="hero__text__right">ja estou na minha contagem regressiva e falta apenas <br>
+                    <span id="contador"></span> <br> para cantarmos meus Parabéns !!
+                </p>
+                <div class="infos-bar">
+                    <ul class="infos-bar__infos">
+                        <li class="infos-bar__infos__item">
+                            <b>Localização</b>
+                            Rua: Teresina N° 1186 - Planalto do Sol <br> Santa Barbara D'Oeste
+                        </li>
+                        <li class="infos-bar__infos__item">
+                            <b>Detalhes</b>
+                            Tem que Brincar Muito Comigo <br> e me levar pra da uma volta.
+                        </li>
+                        <li class="infos-bar__infos__item">
+                            <b>Grande Dia</b>
+                            07/03/2025 ás 19hrs
+                        </li>
+                    </ul>
+                    <a href="#" class="button button--primary">
+                        Confirme Sua Presença
+                    </a>
+                </div>
+            </div>
+        </header>
 
+        <section class="event event--secaoAbraco">
+            <div class="container" data-aos="fade-right">
+                <div class="event__details">
+                    <h2 class="event__details__title">Seção de Abraços</h2>
+                    <p class="event__details__description">
+                        Na Seção de Abraços, você poderá me dar um abraço bem gostoso e me fazer sorrir pra você!!
+                    </p>
+                </div>
+                <img class="event__image" src="./images/BernardoSelfie.jpg" alt="BernardoSelfie">
+            </div>
+        </section>
+        <section class="event event--secaoFotos event--image-left">
+            <div class="container" data-aos="fade-left">
+                <div class="event__details">
+                    <h2 class="event__details__title">Seção de Fotos</h2>
+                    <p class="event__details__description">
+                        Na Seção de Fotos, você poderá me Tirar uma Foto bem bonita assim como eu, pois sou lindo né gente!! Só Não Demora Por FAVOR  !!
+                    </p>
+                </div>
+                <img class="event__image" src="./images/BernardoDePeSkate.jpg" alt="BernardoDePeSkate">
+            </div>
+        </section>
+        <section class="event event--secaoBrincadeiras">
+            <div class="container" data-aos="fade-right">
+                <div class="event__details">
+                    <h2 class="event__details__title">Seção de Brincadeiras</h2>
+                    <p class="event__details__description">
+                        Na Seção de Brincadeiras, você poderá brincar comigo e com a família pois amo muito meu papai e minha mamãe !!
+                    </p>
+                </div>
+                <img class="event__image" src="./images/BernardoSentado.jpg" alt="BernardoSentado">
+            </div>
+        </section>
+        <section class="event event--secaoEncher event--image-left">
+            <div class="container" data-aos="fade-left">
+                <div class="event__details">
+                    <h2 class="event__details__title">Seção de Encher a Pança</h2>
+                    <p class="event__details__description">
+                        Na Seção de Encher a Pança, você poderá comer todas as comidas deliciosas que há em minha festa, menos o meu TÊTÊ...esse só eu sou digno !!
+                    </p>
+                </div>
+                <img class="event__image" src="./images/BernardoDeitadoSkate.jpg" alt="BernardoDeitadoSkate">
+            </div>
+        </section>
+        <section class="event event--secaoParabens">
+            <div class="container" data-aos="fade-right">
+                <div class="event__details">
+                    <h2 class="event__details__title">Hora do Parabéns</h2>
+                    <p class="event__details__description">
+                        Na Hora do Parabéns , Por Favor bata palmas e cante, pois eu vou acompanhar do meu jeitinho e todos vocês vão achar lindo eu sei, pois sou eu...
+                    </p>
+                </div>
+                <img class="event__image" src="./images/BernardoSentadoMao.jpg" alt="BernardoSentadoMao">
+            </div>
+        </section>
+        <footer>
+            <div class="footer">
+                <div class="container" data-aos="flip-right">
+                    <p class="footer__text" >Que Triste Você ainda não confirmou presença...confirme <a href=".hero">Aqui</a> por favor!</p>
+                </div>
+            </div>
+        </footer>
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script src="scripts/main.js"></script>
     </body>
+
 </html>

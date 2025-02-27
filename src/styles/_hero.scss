@@ -1,0 +1,96 @@
+@use 'variables';
+
+.hero {
+    padding-top: 220px;
+    padding-bottom: 100px;
+    background-image: url(../images/BernardoSentadoMao.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -650px;
+    position: relative;
+    .container {
+        position: relative;
+    }
+
+    &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: variables.$secondaryTextColor;
+        content: '';
+        opacity: 0.7;
+    }
+
+    &__text {
+        position: relative;
+        right: 70%;
+        margin-top: 64px;
+        margin-bottom: 64px;
+        font-size: 40px;
+        line-height: 56px;
+        font-weight: 800;
+        text-align:center;
+
+        &__right {
+            position: relative;
+            left: 80%;
+            bottom: 200px;
+            margin-top: 6px;
+            margin-bottom: 6px;
+            font-size: 40px;
+            line-height: 56px;
+            font-weight: 800;
+            text-align:center;
+
+            #contador {
+                color: variables.$spanColor;
+            }
+        }
+    }
+
+    &__logo {
+        margin: 0 auto;
+        height: 400px;
+        display: block;
+        position: relative;
+        right: 900px;
+        top: -200px;
+    }
+
+    @media (max-width: 640px) {
+        padding: 40px 0;
+        background-position-x: -160px ;
+        background-position-y: -180px;
+
+
+        &__logo {
+            height: 150px;
+            width: 150px;
+            position: relative;
+            right: 110px;
+            top: 150px;
+        }
+
+        &__text {
+            font-size: 22px;
+            line-height: 24px;
+            margin: 24px 0;
+            position: relative;
+            left: 10px;
+            top: 100px;
+
+
+            &__right {
+                font-size: 22px;
+                line-height: 24px;
+                margin: 24px 0;
+                position: relative;
+                left: 10px;
+                top: 100px;
+            }
+        }
+    }
+
+}
